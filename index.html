@@ -1,37 +1,604 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- GOOGLE FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+		rel="stylesheet">
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<!-- GLIDE SLIDER -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css"
+		integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css"
+		integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- STYLES -->
 	<link rel="stylesheet" href="./styles/style.css">
+
 	<title>Document</title>
 </head>
+
 <body>
 	<header class="header">
-		<div class="header__top">
-			<ul class="social__list">
-				<li class="social__item"><a href="#">i</a></li>
-				<li class="social__item"><a href="#">f</a></li>
-			</ul>
-			<div class="header__logo">
-				<img src="" alt="" srcset="">
-			</div>
-			<div class="header__search">
-				<input type="text" name="" id="">
-				<img src="" alt="">
+		<div class="container">
+			<div class="header__top">
+				<ul class="social__list">
+					<li class="social__item"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+					<li class="social__item"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+				</ul>
+				<div class="header__logo">
+					<img src="./assets/icons/logo_orange.svg" alt="" srcset="">
+				</div>
+				<div class="header__search">
+					<input type="text" name="" id="" placeholder="Поиск">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</div>
 			</div>
 		</div>
-		<nav class="header__nav nav">
-			<ul class="nav__list">
-				<li class="nav__item"><a href="#">Поступающим</a></li>
-				<li class="nav__item"><a href="#">Руководство</a></li>
-				<li class="nav__item"><a href="#">Учителя</a></li>
-				<li class="nav__item"><a href="#">Партнеры</a></li>
-				<li class="nav__item"><a href="#">Новости</a></li>
-				<li class="nav__item"><a href="#">Проектная деятельность</a></li>
-			</ul>
-		</nav>
 	</header>
+	<nav class="header__nav">
+		<div class="container">
+			<div class="nav">
+				<div class="nav__logo">
+					<a href="#">
+						<img src="./assets/icons/logo_orange.svg" alt="logo">
+					</a>
+				</div>
+				<ul class="nav__list">
+					<!-- <li class="nav__item nav__logo"><a href="#">
+							<img src="./assets/icons/logo_orange.svg" alt="" srcset="">
+					</a></li> -->
+					<li class="nav__item"><a href="#">Новости</a></li>
+					<li class="nav__item"><a href="#">Поступающим</a></li>
+					<li class="nav__item"><a href="#">Учителя</a></li>
+					<li class="nav__item"><a href="#">Проектная деятельность</a></li>
+					<li class="nav__item"><a href="#">Руководство</a></li>
+					<li class="nav__item"><a href="#">Партнеры</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<main>
+		<section class="hero">
+			<div class="glide hero__glide">
+				<div class="glide__track" data-glide-el="track">
+					<ul class="glide__slides">
+						<li class="glide__slide priorities">
+							<img src="./assets/bilimkana/photo_2022-10-27_10-09-37.jpg" alt="" srcset="">
+							<div class="container">
+								<div class="priorities__text">
+									<p class="priorities__desc">Наши приоритеты: критическое мышление, английский язык,
+										программирование, Art.
+									</p>
+									<button class="button priorities__btn">Записаться</button>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide mission">
+							<img src="./assets/images/Bilimkana_Blocks.svg" alt="" srcset="">
+							<div class="container">
+								<div class="mission__text">
+									<h5 class="mission__title">
+										Миссия Фонда BILIMKANA - поддержка и формирование
+										нового поколения молодых людей, конкурентоспособных
+										на глобальном уровне.
+									</h5>
+									<hr class="mission__divider">
+									<p class="mission__desc">В нашей школе дети:
+										Свободные, говорящие на нескольких языках,
+										имеющие свою точку зрения и уважающие
+										чужое мнение, с критическим мышлением,
+										коммуникабельные и мобильные, любящие свою Родину, имеющие свою страновую идентичность,
+										близкие к культуре и искусстве.
+									</p>
+									<button class="button mission__btn">Подробнее</button>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="glide__bullets" data-glide-el="controls[nav]">
+					<button class="glide__bullet" data-glide-dir="=0"></button>
+					<button class="glide__bullet" data-glide-dir="=1"></button>
+				</div>
+			</div>
+		</section>
+		<section class="news">
+			<div class="container">
+				<h2 class="title news__title">Новости</h2>
+			</div>
+			<div class="glide news__glide">
+				<div class="glide__track" data-glide-el="track">
+					<ul class="glide__slides">
+						<li class="glide__slide">
+							<div class="news__card">
+								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<div class="news__content">
+									<p class="news__desc">Lorem tur adipisicing elit. Quisquam, quae.</p>
+									<button class="button news__btn">Подробнее</button>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="news__card">
+								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<div class="news__content">
+									<p class="news__desc">Lorem tur adipisicing elit. Quisquam, quae.</p>
+									<button class="button news__btn">Подробнее</button>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="news__card">
+								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<div class="news__content">
+									<p class="news__desc">Lorem tur adipisicing elit. Quisquam, quae.</p>
+									<button class="button news__btn">Подробнее</button>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="news__card">
+								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<div class="news__content">
+									<p class="news__desc">Lorem tur adipisicing elit. Quisquam, quae.</p>
+									<button class="button news__btn">Подробнее</button>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="news__card">
+								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<div class="news__content">
+									<p class="news__desc">Lorem tur adipisicing elit. Quisquam, quae.</p>
+									<button class="button news__btn">Подробнее</button>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="news__card">
+								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<div class="news__content">
+									<p class="news__desc">Lorem tur adipisicing elit. Quisquam, quae.</p>
+									<button class="button news__btn">Подробнее</button>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="news__card">
+								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<div class="news__content">
+									<p class="news__desc">Lorem tur adipisicing elit. Quisquam, quae.</p>
+									<button class="button news__btn">Подробнее</button>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="news__card">
+								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<div class="news__content">
+									<p class="news__desc">Lorem tur adipisicing elit. Quisquam, quae.</p>
+									<button class="button news__btn">Подробнее</button>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="news__card">
+								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<div class="news__content">
+									<p class="news__desc">Lorem tur adipisicing elit. Quisquam, quae.</p>
+									<button class="button news__btn">Подробнее</button>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="news__card">
+								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<div class="news__content">
+									<p class="news__desc">Lorem tur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing
+										elit. Voluptas, autem? Quisquam, quae.</p>
+									<button class="button news__btn">Подробнее</button>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="news__card">
+								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<div class="news__content">
+									<p class="news__desc">Lorem tur adipisicing elit. Quisquam, quae.</p>
+									<button class="button news__btn">Подробнее</button>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="glide__arrows" data-glide-el="controls">
+					<button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="./assets/icons/arrow.svg"
+							alt=""></button>
+					<button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="./assets/icons/arrow.svg"
+							alt=""></button>
+				</div>
+			</div>
+		</section>
+		<section class="about">
+			<div class="container">
+				<h2 class="title about__title">Почему мы ?</h2>
+				<ul class="about__list">
+					<li class="about__item">
+						<div class="about__image"><img src="./assets/bilimkana/0W2A0768.jpg" alt=""></div>
+						<div class="about__content">
+							<h3 class="about__title"></h3>
+							<p class="about__desc">Углублённое
+								изучение</p>
+						</div>
+					</li>
+					<li class="about__item">
+						<div class="about__image"><img src="./assets/bilimkana/0W2A0770.jpg" alt=""></div>
+						<div class="about__content">
+							<h3 class="about__title"></h3>
+							<p class="about__desc">Качество,
+								проверенное
+								временем!</p>
+						</div>
+					</li>
+					<li class="about__item">
+						<div class="about__image"><img src="./assets/bilimkana/0W2A0772.jpg" alt=""></div>
+						<div class="about__content">
+							<h3 class="about__title"></h3>
+							<p class="about__desc"></p>
+						</div>
+					</li>
+					<li class="about__item">
+						<div class="about__image"><img src="./assets/bilimkana/0W2A0888.jpg" alt=""></div>
+						<div class="about__content">
+							<h3 class="about__title"></h3>
+							<p class="about__desc"></p>
+						</div>
+					</li>
+					<li class="about__item">
+						<div class="about__image"><img src="./assets/bilimkana/7K6A6165.jpg" alt=""></div>
+						<div class="about__content">
+							<h3 class="about__title"></h3>
+							<p class="about__desc"></p>
+						</div>
+					</li>
+					<li class="about__item">
+						<div class="about__image"><img src="./assets/bilimkana/DJI_0441.jpg" alt=""></div>
+						<div class="about__content">
+							<h3 class="about__title"></h3>
+							<p class="about__desc"></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="applicants">
+			<div class="container">
+				<h2 class="title applicants__title">Поступающим</h2>
+				<ul class="applicants__roll">
+					<li class="applicants__element">Сдать тест </li>
+					<li class="applicants__element">Документы</li>
+					<li class="applicants__element">Интервью</li>
+				</ul>
+				<h3 class="applicants__heading">КАК ПОСТУПИТЬ В BILIMKANA SCHOOL?</h3>
+				<ul class="applicants__list">
+					<li class="applicants__item">
+						<p>1 шаг: Вступительное тестирование</p>
+						<p>При поступлении в школу с 0 по 1 классы кандидаты проходят интервью с психологом, со 2 по 11 классы,
+							кандидаты сдают тест и проходят интервью с психологом.</p>
+						<p>Вступительное тестирование проводится по трем предметам : математика , английский язык, русский язык.</p>
+						<p>По результатам теста предоставляются стипендии.</p>
+						<ul>
+							<li><span>Золотая стипендия</span> ($1500) предоставляется кандидатам, выполнившим успешно от 91%
+								вступительного теста.
+							</li>
+							<li><span>Серебряная стипендия</span> ($1000) предоставляется при 81 % успешном прохождении теста.</li>
+							<li><span>Бронзовая стипендия</span> ($500) предоставляется кандидатам, выполнившимуспешно более 70%
+								тестирования.
+							</li>
+						</ul>
+						<p>Стипендии действуют в течение одного академического года.</p>
+						<p>Чтобы начать процесс поступления необходимо пройти по ссылке ниже и заполнить форму заявки. После этого
+							мы свяжемся с вами и проконсультируем о дальнейших шагах.</p>
+						<button class="button">Записаться</button>
+					</li>
+					<li class="applicants__item">
+						<p>2 шаг: Заявление на зачисление учащегося</p>
+						<p>Учащиеся, вступительное тестирование, должны предоставить перечень документов на создание контракта:</p>
+						<ul>
+							<li>Свидетельство о рождении и паспорта родителей (можно одного)</li>
+							<li>Личное дело из школы</li>
+							<li>Мед карты 026 и 063</li>
+						</ul>
+					</li>
+				</ul>
+				<h3 class="applicants__heading">СТОИМОСТЬ ОБУЧЕНИЯ</h3>
+				<p>
+					Стоимость обучения 5000$ в год.<br>
+					Питание и транспорт оплачиваются отдельно.
+				</p>
+				<p>Стоимость контракта и форма оплаты для каждого отдельного учащегося фиксируется в приложении к Договору об
+					оказании образовательных услуг, заключенном между школой и родителем. Для получения подробной информации о
+					сроках и формах оплаты, а также о возможных скидках обращайтесь по номеру +996 (770) 11 00 25.</p>
+				<p>На второго и более детей - 10% скидка каждому ребёнку, в случае если ребёнок не получает одну из наших
+					стипендий по результатам тестирования.</p>
+			</div>
+		</section>
+		<section class="teachers">
+			<div class="container">
+				<div class="teachers__header">
+					<h2 class="title teachers__title">Познакомтесь с нашими
+						преподователями</h2>
+					<button class="button teachers__btn">Подробнее</button>
+				</div>
+				<ul class="teachers__list">
+					<li class="teachers__item teachers__card">
+						<div class="teachers__image">
+							<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+						</div>
+						<div class="teachers__content">
+							<h3 class="teachers__name">Фамилия Имя
+								Отчество </h3>
+							<p class="teachers__desc">математика</p>
+						</div>
+					</li>
+					<li class="teachers__item teachers__card">
+						<div class="teachers__image">
+							<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+						</div>
+						<div class="teachers__content">
+							<h3 class="teachers__name">Фамилия Имя
+								Отчество </h3>
+							<p class="teachers__desc">математика</p>
+						</div>
+					</li>
+					<li class="teachers__item teachers__card">
+						<div class="teachers__image">
+							<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+						</div>
+						<div class="teachers__content">
+							<h3 class="teachers__name">Фамилия Имя
+								Отчество </h3>
+							<p class="teachers__desc">математика</p>
+						</div>
+					</li>
+					<li class="teachers__item teachers__card">
+						<div class="teachers__image">
+							<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+						</div>
+						<div class="teachers__content">
+							<h3 class="teachers__name">Фамилия Имя
+								Отчество </h3>
+							<p class="teachers__desc">математика</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="activity">
+			<div class="container">
+				<h2 class="title activity__title">Проектная деятельность</h2>
+			</div>
+			<div class="glide activity__glide">
+				<div class="glide__track" data-glide-el="track">
+					<ul class="glide__slides">
+						<li class="glide__slide">
+							<div class="activity__card">
+								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<ul class="activity__content">
+									<li class="activity__desc">Французский</li>
+									<li class="activity__desc">Немецкий</li>
+									<li class="activity__desc">Китайский</li>
+									<li class="activity__desc">Английский</li>
+								</ul>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="activity__card">
+								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<ul class="activity__content">
+									<li class="activity__desc">Французский</li>
+									<li class="activity__desc">Немецкий</li>
+									<li class="activity__desc">Китайский</li>
+									<li class="activity__desc">Английский</li>
+								</ul>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="activity__card">
+								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<ul class="activity__content">
+									<li class="activity__desc">Французский</li>
+									<li class="activity__desc">Немецкий</li>
+									<li class="activity__desc">Китайский</li>
+									<li class="activity__desc">Английский</li>
+								</ul>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="activity__card">
+								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<ul class="activity__content">
+									<li class="activity__desc">Французский</li>
+									<li class="activity__desc">Немецкий</li>
+									<li class="activity__desc">Китайский</li>
+									<li class="activity__desc">Английский</li>
+								</ul>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="activity__card">
+								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<ul class="activity__content">
+									<li class="activity__desc">Французский</li>
+									<li class="activity__desc">Немецкий</li>
+									<li class="activity__desc">Китайский</li>
+									<li class="activity__desc">Английский</li>
+								</ul>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+				<div class="glide__arrows" data-glide-el="controls">
+					<button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="./assets/icons/arrow.svg"
+							alt=""></button>
+					<button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="./assets/icons/arrow.svg"
+							alt=""></button>
+				</div>
+			</div>
+		</section>
+		<section class="teachers">
+			<div class="container">
+				<div class="teachers__header">
+					<h2 class="title teachers__title">Руководство нашей школы</h2>
+					<!-- <button class="button teachers__btn">Подробнее</button> -->
+				</div>
+				<ul class="teachers__list">
+					<li class="teachers__item teachers__card">
+						<div class="teachers__image">
+							<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+						</div>
+						<div class="teachers__content">
+							<h3 class="teachers__name">Фамилия Имя
+								Отчество </h3>
+							<p class="teachers__desc">математика</p>
+						</div>
+					</li>
+					<li class="teachers__item teachers__card">
+						<div class="teachers__image">
+							<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+						</div>
+						<div class="teachers__content">
+							<h3 class="teachers__name">Фамилия Имя
+								Отчество </h3>
+							<p class="teachers__desc">математика</p>
+						</div>
+					</li>
+					<li class="teachers__item teachers__card">
+						<div class="teachers__image">
+							<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+						</div>
+						<div class="teachers__content">
+							<h3 class="teachers__name">Фамилия Имя
+								Отчество </h3>
+							<p class="teachers__desc">математика</p>
+						</div>
+					</li>
+					<li class="teachers__item teachers__card">
+						<div class="teachers__image">
+							<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+						</div>
+						<div class="teachers__content">
+							<h3 class="teachers__name">Фамилия Имя
+								Отчество </h3>
+							<p class="teachers__desc">математика</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="progress">
+			<div class="container">
+				<h2 class="title progress__title">Достижения нашей школы </h2>
+				<ul class="progress__list">
+					<li class="progress__item">
+						<img src="./assets/bilimkana/0W2A0768.jpg" alt="">
+						<p class="progress__content">Семь учениц школы Билимкана American School подтвердили свои знания на
+							тестировании «Алтын тамга» и получат аттестаты особого образца</p>
+					</li>
+					<li class="progress__item">
+						<img src="./assets/bilimkana/0W2A0768.jpg" alt="">
+						<p class="progress__content">В 2021 году школу закончили 83 учащихся.</p>
+					</li>
+					<li class="progress__item">
+						<img src="./assets/bilimkana/0W2A0768.jpg" alt="">
+						<p class="progress__content">40 выпускников, что составляет 48%, на «хорошо» и «отлично».</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="partners">
+			<div class="container">
+				<h2 class="title partners__title">
+					Наши партнеры
+				</h2>
+				<ul class="partners__list">
+					<li class="partners__item">
+						<div class="partners__image">
+							<img src="./assets/images/7711b98517 1.svg" alt="">
+						</div>
+						<div class="partners__content">Высшая школа экономики <br>
+							( Москва, Россия)</div>
+					</li>
+					<li class="partners__item">
+						<div class="partners__image">
+							<img src="./assets/images/CaLogo 1.svg" alt="">
+						</div>
+						<div class="partners__content">Высшая школа экономики<br>
+							( Москва, Россия)</div>
+					</li>
+					<li class="partners__item">
+						<div class="partners__image">
+							<img src="./assets/images/Fairfax-University-of-America 1.svg" alt="">
+						</div>
+						<div class="partners__content">Fairfax University of American</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__top">
+					<img src="./assets/icons/logo_orange.svg" alt="" class="footer__logo">
+					<div class="footer__social">
+						<a href="#" class="footer__social-item">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+						<a href="#" class="footer__social-item">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</div>
+				</div>
+				<div class="footer__bottom contacts">
+					<ul class="contacts__list">
+						<li class="contacts__item"><a href=""><img src="./assets/icons/call.svg" alt=""><span>+996 555
+									730910</span></a></li>
+						<li class="contacts__item"><a href=""><img src="./assets/icons/mail.svg"
+									alt=""><span>Example@gmail.com</span></a></li>
+						<li class="contacts__item"><a href=""><img src="./assets/icons/location.svg" alt=""><span>Кайыкова,
+									51-53</span></a></li>
+					</ul>
+				</div>
+		</footer>
+	</main>
+	<script src="https://kit.fontawesome.com/d014bd81e4.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+		integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+		integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"
+		integrity="sha512-wdUM0BxMyMC/Yem1RWDiIiXA6ssXMoxypihVEwxDc+ftznGeRu4s9Fmxl8PthpxOh5CQ0eqjqw1Q8ScgNA1moQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+
+	<!-- GLIDE SLIDER -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"
+		integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script src="./script/script.js" defer></script>
+
 </body>
+
 </html>
