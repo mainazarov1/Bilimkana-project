@@ -146,3 +146,18 @@ $(document).ready(function () {
 	// 	}
 	// });
 });
+
+
+let modal = document.getElementById('mission__modal');
+let missionModalClose = document.getElementById('mission__modal-close');
+let missionModalOpen = document.getElementById('mission__modal-open');
+
+missionModalOpen.onclick = function () { 
+	modal.style.display = 'block';
+}
+missionModalClose.onclick = function () { 
+	modal.style.display = 'none';
+}
+window.onclick = function (e) {
+	if(e.target == modal) modal.style.display = 'none';
+}

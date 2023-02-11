@@ -27,19 +27,20 @@
 </head>
 
 <body>
+	<!-- <div class="overlay"></div> -->
 	<header class="header">
 		<div class="container">
 			<div class="header__top">
 				<ul class="social__list">
-					<li class="social__item"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-					<li class="social__item"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+					<li class="social__item"><a href="#"><span class="fa-brands fa-instagram"></span> </a></li>
+					<li class="social__item"><a href="#"><span class="fa-brands fa-facebook"></span> </a></li>
 				</ul>
 				<div class="header__logo">
-					<img src="./assets/icons/logo_orange.svg" alt="" srcset="">
+					<img src="./assets/icons/logo_orange.svg" alt="Logo">
 				</div>
 				<div class="header__search">
-					<input type="text" name="" id="" placeholder="Поиск">
-					<i class="fa fa-search" aria-hidden="true"></i>
+					<input type="text" placeholder="Поиск">
+					<span class="fa fa-search" aria-hidden="true"></span>
 				</div>
 			</div>
 		</div>
@@ -49,30 +50,30 @@
 			<div class="nav">
 				<div class="nav__logo">
 					<a href="#">
-						<img src="./assets/icons/logo_orange.svg" alt="logo">
+						<img src="./assets/icons/logo_orange.svg" alt="Logo">
 					</a>
 				</div>
 				<ul class="nav__list">
 					<!-- <li class="nav__item nav__logo"><a href="#">
-							<img src="./assets/icons/logo_orange.svg" alt="" srcset="">
+							<img src="./assets/icons/logo_orange.svg" alt="">
 					</a></li> -->
-					<li class="nav__item"><a href="#">Новости</a></li>
+					<li class="nav__item"><a href="#news">Новости</a></li>
 					<li class="nav__item"><a href="#">Поступающим</a></li>
 					<li class="nav__item"><a href="#">Учителя</a></li>
 					<li class="nav__item"><a href="#">Проектная деятельность</a></li>
 					<li class="nav__item"><a href="#">Руководство</a></li>
-					<li class="nav__item"><a href="#">Партнеры</a></li>
+					<li class="nav__item"><a href="#partners">Партнеры</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 	<main>
-		<section class="hero">
+		<section class="hero" id="hero">
 			<div class="glide hero__glide">
 				<div class="glide__track" data-glide-el="track">
 					<ul class="glide__slides">
 						<li class="glide__slide priorities">
-							<img src="./assets/bilimkana/photo_2022-10-27_10-09-37.jpg" alt="" srcset="">
+							<img src="./assets/bilimkana/photo_2022-10-27_10-09-37.jpg" alt="">
 							<div class="container">
 								<div class="priorities__text">
 									<p class="priorities__desc">Наши приоритеты: критическое мышление, английский язык,
@@ -83,7 +84,7 @@
 							</div>
 						</li>
 						<li class="glide__slide mission">
-							<img src="./assets/images/Bilimkana_Blocks.svg" alt="" srcset="">
+							<img src="./assets/images/Bilimkana_Blocks.svg" alt="">
 							<div class="container">
 								<div class="mission__text">
 									<h5 class="mission__title">
@@ -99,7 +100,7 @@
 										коммуникабельные и мобильные, любящие свою Родину, имеющие свою страновую идентичность,
 										близкие к культуре и искусстве.
 									</p>
-									<button class="button mission__btn">Подробнее</button>
+									<button class="button mission__btn" id="mission__modal-open">Подробнее</button>
 								</div>
 							</div>
 						</li>
@@ -110,8 +111,40 @@
 					<button class="glide__bullet" data-glide-dir="=1"></button>
 				</div>
 			</div>
+			<!-- <div class="modal mission__modal" id="mission__modal">
+				<span class="modal__close">&times;</span>
+				<div class="logo">
+					<img src="./assets/icons/logo_orange.svg" alt="Logo">
+				</div>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+					standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+					make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+					typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+					sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+					PageMaker including versions of Lorem Ipsum.
+					
+
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+					standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+					make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+					typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+				</p>
+			</div> -->
 		</section>
-		<section class="news">
+		<div class="modal modal__form" id="mission__modal">
+			<div class="modal__view">
+				<span class="modal__closeBtn" id="mission__modal-close">x</span>
+				<div class="modal__logo">
+					<img src="./assets/icons/logo_orange.svg" alt="Logo">
+				</div>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of </p>
+
+			</div>
+		</div>
+		<section class="news" id="news">
 			<div class="container">
 				<h2 class="title news__title">Новости</h2>
 			</div>
@@ -120,7 +153,7 @@
 					<ul class="glide__slides">
 						<li class="glide__slide">
 							<div class="news__card">
-								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<img src="./assets/images/teacher  3.svg" alt="">
 								<div class="news__content">
 									<p class="news__desc">Lorem tur adipisicing elit. Quisquam, quae.</p>
 									<button class="button news__btn">Подробнее</button>
@@ -129,7 +162,7 @@
 						</li>
 						<li class="glide__slide">
 							<div class="news__card">
-								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<img src="./assets/images/teacher  3.svg" alt="">
 								<div class="news__content">
 									<p class="news__desc">Lorem tur adipisicing elit. Quisquam, quae.</p>
 									<button class="button news__btn">Подробнее</button>
@@ -138,7 +171,7 @@
 						</li>
 						<li class="glide__slide">
 							<div class="news__card">
-								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<img src="./assets/images/teacher  3.svg" alt="">
 								<div class="news__content">
 									<p class="news__desc">Lorem tur adipisicing elit. Quisquam, quae.</p>
 									<button class="button news__btn">Подробнее</button>
@@ -147,7 +180,7 @@
 						</li>
 						<li class="glide__slide">
 							<div class="news__card">
-								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<img src="./assets/images/teacher  3.svg" alt="">
 								<div class="news__content">
 									<p class="news__desc">Lorem tur adipisicing elit. Quisquam, quae.</p>
 									<button class="button news__btn">Подробнее</button>
@@ -156,7 +189,7 @@
 						</li>
 						<li class="glide__slide">
 							<div class="news__card">
-								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<img src="./assets/images/teacher  3.svg" alt="">
 								<div class="news__content">
 									<p class="news__desc">Lorem tur adipisicing elit. Quisquam, quae.</p>
 									<button class="button news__btn">Подробнее</button>
@@ -165,7 +198,7 @@
 						</li>
 						<li class="glide__slide">
 							<div class="news__card">
-								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<img src="./assets/images/teacher  3.svg" alt="">
 								<div class="news__content">
 									<p class="news__desc">Lorem tur adipisicing elit. Quisquam, quae.</p>
 									<button class="button news__btn">Подробнее</button>
@@ -174,7 +207,7 @@
 						</li>
 						<li class="glide__slide">
 							<div class="news__card">
-								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<img src="./assets/images/teacher  3.svg" alt="">
 								<div class="news__content">
 									<p class="news__desc">Lorem tur adipisicing elit. Quisquam, quae.</p>
 									<button class="button news__btn">Подробнее</button>
@@ -183,7 +216,7 @@
 						</li>
 						<li class="glide__slide">
 							<div class="news__card">
-								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<img src="./assets/images/teacher  3.svg" alt="">
 								<div class="news__content">
 									<p class="news__desc">Lorem tur adipisicing elit. Quisquam, quae.</p>
 									<button class="button news__btn">Подробнее</button>
@@ -192,7 +225,7 @@
 						</li>
 						<li class="glide__slide">
 							<div class="news__card">
-								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<img src="./assets/images/teacher  3.svg" alt="">
 								<div class="news__content">
 									<p class="news__desc">Lorem tur adipisicing elit. Quisquam, quae.</p>
 									<button class="button news__btn">Подробнее</button>
@@ -201,7 +234,7 @@
 						</li>
 						<li class="glide__slide">
 							<div class="news__card">
-								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<img src="./assets/images/teacher  3.svg" alt="">
 								<div class="news__content">
 									<p class="news__desc">Lorem tur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing
 										elit. Voluptas, autem? Quisquam, quae.</p>
@@ -211,7 +244,7 @@
 						</li>
 						<li class="glide__slide">
 							<div class="news__card">
-								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<img src="./assets/images/teacher  3.svg" alt="">
 								<div class="news__content">
 									<p class="news__desc">Lorem tur adipisicing elit. Quisquam, quae.</p>
 									<button class="button news__btn">Подробнее</button>
@@ -342,7 +375,7 @@
 				<ul class="teachers__list">
 					<li class="teachers__item teachers__card">
 						<div class="teachers__image">
-							<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+							<img src="./assets/images/teacher  3.svg" alt="">
 						</div>
 						<div class="teachers__content">
 							<h3 class="teachers__name">Фамилия Имя
@@ -352,7 +385,7 @@
 					</li>
 					<li class="teachers__item teachers__card">
 						<div class="teachers__image">
-							<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+							<img src="./assets/images/teacher  3.svg" alt="">
 						</div>
 						<div class="teachers__content">
 							<h3 class="teachers__name">Фамилия Имя
@@ -362,7 +395,7 @@
 					</li>
 					<li class="teachers__item teachers__card">
 						<div class="teachers__image">
-							<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+							<img src="./assets/images/teacher  3.svg" alt="">
 						</div>
 						<div class="teachers__content">
 							<h3 class="teachers__name">Фамилия Имя
@@ -372,7 +405,7 @@
 					</li>
 					<li class="teachers__item teachers__card">
 						<div class="teachers__image">
-							<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+							<img src="./assets/images/teacher  3.svg" alt="">
 						</div>
 						<div class="teachers__content">
 							<h3 class="teachers__name">Фамилия Имя
@@ -392,7 +425,7 @@
 					<ul class="glide__slides">
 						<li class="glide__slide">
 							<div class="activity__card">
-								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<img src="./assets/images/teacher  3.svg" alt="">
 								<ul class="activity__content">
 									<li class="activity__desc">Французский</li>
 									<li class="activity__desc">Немецкий</li>
@@ -403,7 +436,7 @@
 						</li>
 						<li class="glide__slide">
 							<div class="activity__card">
-								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<img src="./assets/images/teacher  3.svg" alt="">
 								<ul class="activity__content">
 									<li class="activity__desc">Французский</li>
 									<li class="activity__desc">Немецкий</li>
@@ -414,7 +447,7 @@
 						</li>
 						<li class="glide__slide">
 							<div class="activity__card">
-								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<img src="./assets/images/teacher  3.svg" alt="">
 								<ul class="activity__content">
 									<li class="activity__desc">Французский</li>
 									<li class="activity__desc">Немецкий</li>
@@ -425,7 +458,7 @@
 						</li>
 						<li class="glide__slide">
 							<div class="activity__card">
-								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<img src="./assets/images/teacher  3.svg" alt="">
 								<ul class="activity__content">
 									<li class="activity__desc">Французский</li>
 									<li class="activity__desc">Немецкий</li>
@@ -436,7 +469,7 @@
 						</li>
 						<li class="glide__slide">
 							<div class="activity__card">
-								<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+								<img src="./assets/images/teacher  3.svg" alt="">
 								<ul class="activity__content">
 									<li class="activity__desc">Французский</li>
 									<li class="activity__desc">Немецкий</li>
@@ -465,7 +498,7 @@
 				<ul class="teachers__list">
 					<li class="teachers__item teachers__card">
 						<div class="teachers__image">
-							<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+							<img src="./assets/images/teacher  3.svg" alt="">
 						</div>
 						<div class="teachers__content">
 							<h3 class="teachers__name">Фамилия Имя
@@ -475,7 +508,7 @@
 					</li>
 					<li class="teachers__item teachers__card">
 						<div class="teachers__image">
-							<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+							<img src="./assets/images/teacher  3.svg" alt="">
 						</div>
 						<div class="teachers__content">
 							<h3 class="teachers__name">Фамилия Имя
@@ -485,7 +518,7 @@
 					</li>
 					<li class="teachers__item teachers__card">
 						<div class="teachers__image">
-							<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+							<img src="./assets/images/teacher  3.svg" alt="">
 						</div>
 						<div class="teachers__content">
 							<h3 class="teachers__name">Фамилия Имя
@@ -495,7 +528,7 @@
 					</li>
 					<li class="teachers__item teachers__card">
 						<div class="teachers__image">
-							<img src="./assets/images/teacher  3.svg" alt="" srcset="">
+							<img src="./assets/images/teacher  3.svg" alt="">
 						</div>
 						<div class="teachers__content">
 							<h3 class="teachers__name">Фамилия Имя
@@ -526,7 +559,7 @@
 				</ul>
 			</div>
 		</section>
-		<section class="partners">
+		<section class="partners" id="partners">
 			<div class="container">
 				<h2 class="title partners__title">
 					Наши партнеры
@@ -561,10 +594,10 @@
 					<img src="./assets/icons/logo_orange.svg" alt="" class="footer__logo">
 					<div class="footer__social">
 						<a href="#" class="footer__social-item">
-							<i class="fab fa-facebook-f"></i>
+							<span class="fab fa-facebook-f"></span>
 						</a>
 						<a href="#" class="footer__social-item">
-							<i class="fab fa-instagram"></i>
+							<span class="fab fa-instagram"></span>
 						</a>
 					</div>
 				</div>
