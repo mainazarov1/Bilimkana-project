@@ -21,7 +21,9 @@
 		integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- STYLES -->
+	<link rel="stylesheet" href="./calendar.min.css">
 	<link rel="stylesheet" href="./styles/style.css">
+	<link rel="stylesheet" href="./styles/media.css">
 
 	<title>Document</title>
 </head>
@@ -79,7 +81,7 @@
 									<p class="priorities__desc">Наши приоритеты: критическое мышление, английский язык,
 										программирование, Art.
 									</p>
-									<button class="button priorities__btn">Записаться</button>
+									<button name='enroll' class="button priorities__btn">Записаться</button>
 								</div>
 							</div>
 						</li>
@@ -100,7 +102,7 @@
 										коммуникабельные и мобильные, любящие свою Родину, имеющие свою страновую идентичность,
 										близкие к культуре и искусстве.
 									</p>
-									<button class="button mission__btn" id="mission__modal-open">Подробнее</button>
+									<button name="mission" class="button mission__btn" id="mission__modal-open">Подробнее</button>
 								</div>
 							</div>
 						</li>
@@ -132,15 +134,33 @@
 				</p>
 			</div> -->
 		</section>
+		<div class="modal modal__form" id="enroll__modal">
+			<div class="modal__view">
+				<span class="modal__closeBtn" id="mission__modal-close">x</span>
+				<div class="modal__logo">
+					<img src="./assets/icons/logo_orange.svg" alt="Logo">
+				</div>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+					industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+					scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+					electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+					Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+					PageMaker including versions of Lorem Ipsum.
+
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+					standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+					make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+					typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of </p>
+
+			</div>
+		</div>
 		<div class="modal modal__form" id="mission__modal">
 			<div class="modal__view">
 				<span class="modal__closeBtn" id="mission__modal-close">x</span>
 				<div class="modal__logo">
 					<img src="./assets/icons/logo_orange.svg" alt="Logo">
 				</div>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of </p>
+				<p></p>
 
 			</div>
 		</div>
@@ -539,6 +559,37 @@
 				</ul>
 			</div>
 		</section>
+		<section class="calendar">
+			<div class="container">
+				<h2 class="title activity__title">Наши мероприятия </h2>
+			</div>
+				<div class="glide calendar__glide">
+					<div class="glide__track" data-glide-el="track">
+					</div>
+					<div class="glide__arrows" data-glide-el="controls">
+						<button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="./assets/icons/arrow.svg"
+								alt=""></button>
+						<button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="./assets/icons/arrow.svg"
+								alt=""></button>
+					</div>
+		</section>
+		<div id="calendar"></div>
+		<!-- <div class="calendar">
+			<div class="container">
+				
+			</div>
+		</div> -->
+		<!-- <div class="calendar__item">
+			<p class='month__title'>Ноябрь 2022</p>
+			<hr />
+			<div class="month__table"></div>
+			<hr />
+			<ul class="month__list">
+				<li class="month__item">
+					<span>2</span><p>Сегодня день народного единстваasdasdasdasdasda</p>
+				</li>
+			</ul>
+		</div> -->
 		<section class="progress">
 			<div class="container">
 				<h2 class="title progress__title">Достижения нашей школы </h2>
@@ -629,7 +680,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"
 		integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+	<script src="https://cdn.jsdelivr.net/npm/dayjs"></script>
+	<script src="./calendar.js" defer></script>
 	<script src="./script/script.js" defer></script>
 
 </body>

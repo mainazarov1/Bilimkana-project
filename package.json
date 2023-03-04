@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@uvarov.frontend/vanilla-calendar": "^2.4.0",
+    "dayjs": "^1.11.7"
+  }
+}
