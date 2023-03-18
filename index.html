@@ -136,7 +136,16 @@
 		</section>
 		<div class="modal modal__form" id="enroll__modal">
 			<div class="modal__view">
-				<span class="modal__closeBtn" id="mission__modal-close">x</span>
+				<span class="modal__closeBtn" id="mission__modal-close"><i class="fa-solid fa-xmark"></i></span>
+				<div class="modal__logo">
+					<img src="./assets/icons/logo_orange.svg" alt="Logo">
+				</div>
+
+			</div>
+		</div>
+		<div class="modal modal__form" id="mission__modal">
+			<div class="modal__view">
+				<span class="modal__closeBtn" id="mission__modal-close"><i class="fa-solid fa-xmark"></i></span>
 				<div class="modal__logo">
 					<img src="./assets/icons/logo_orange.svg" alt="Logo">
 				</div>
@@ -151,17 +160,6 @@
 					standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
 					make a type specimen book. It has survived not only five centuries, but also the leap into electronic
 					typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of </p>
-
-			</div>
-		</div>
-		<div class="modal modal__form" id="mission__modal">
-			<div class="modal__view">
-				<span class="modal__closeBtn" id="mission__modal-close">x</span>
-				<div class="modal__logo">
-					<img src="./assets/icons/logo_orange.svg" alt="Logo">
-				</div>
-				<p></p>
-
 			</div>
 		</div>
 		<section class="news" id="news">
@@ -288,9 +286,10 @@
 					<li class="about__item">
 						<div class="about__image"><img src="./assets/bilimkana/0W2A0768.jpg" alt=""></div>
 						<div class="about__content">
-							<h3 class="about__title"></h3>
-							<p class="about__desc">Углублённое
-								изучение</p>
+							<h3 class="about__title">Углублённое
+								изучение</h3>
+							<p class="about__desc">английский язык и
+								математика</p>
 						</div>
 					</li>
 					<li class="about__item">
@@ -563,15 +562,15 @@
 			<div class="container">
 				<h2 class="title activity__title">Наши мероприятия </h2>
 			</div>
-				<div class="glide calendar__glide">
-					<div class="glide__track" data-glide-el="track">
-					</div>
-					<div class="glide__arrows" data-glide-el="controls">
-						<button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="./assets/icons/arrow.svg"
-								alt=""></button>
-						<button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="./assets/icons/arrow.svg"
-								alt=""></button>
-					</div>
+			<div class="glide calendar__glide">
+				<div class="glide__track" data-glide-el="track">
+				</div>
+				<div class="glide__arrows" data-glide-el="controls">
+					<button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="./assets/icons/arrow.svg"
+							alt=""></button>
+					<button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="./assets/icons/arrow.svg"
+							alt=""></button>
+				</div>
 		</section>
 		<div id="calendar"></div>
 		<!-- <div class="calendar">
@@ -682,6 +681,7 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdn.jsdelivr.net/npm/dayjs"></script>
 	<script src="./calendar.js" defer></script>
+	<script src="./script/calendarList.js" defer></script>
 	<script src="./script/script.js" defer></script>
 
 </body>

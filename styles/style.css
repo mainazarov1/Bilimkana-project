@@ -794,6 +794,7 @@ body {
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: auto;
 	gap: 44px;
+	margin-top: 40px;
 }
 .about__item {
 	width: 100%;
@@ -802,6 +803,25 @@ body {
 	border: 8px solid var(--white);
 	border-radius: 16px;
 	position: relative;
+	z-index: 2;
+	cursor: pointer;
+}
+.about__item:hover .about__title{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.about__item:hover .about__title{
+	color: var(--orange);
+	position: static;
+	top: 30%;
+	/* transform: translateY(0); */
+}
+.about__item:hover .about__desc{
+	color: var(--orange);
+	position: static;
+	top: 30%;
+	/* transform: translateY(0); */
 }
 .about__item:before {
 	content: "";
@@ -810,6 +830,7 @@ body {
 	background-color: rgba(0, 0, 0, 0.5);
 	width: 100%;
 	height: 100%;
+	border-radius: 8px;
 }
 .about__image {
 	width: 100%;
@@ -818,6 +839,7 @@ body {
 	overflow: hidden;
 	position: absolute;
 	z-index: 0;
+	
 }
 .about__image img {
 	width: 100%;
@@ -825,14 +847,28 @@ body {
 	object-fit: cover;
 }
 .about__content {
+	font-weight: 800;
+	font-size: 34px;
+	line-height: 41px;
+	text-align: center;
+	color: var(--white);
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	position: relative;
+	height: 100%;
 }
-.about__title {
-	margin-bottom: 56px;
-}
-.about__desc {
+.about__content .about__title {
 	position: absolute;
 	z-index: 2;
-	color: white;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: all 0.3s ease-in-out;	
+}
+.about__content .about__desc {
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: all 0.3s ease-in-out;	
 }
 
 .activity {
@@ -1024,7 +1060,7 @@ body {
 	height: 550px;
 	padding: 30px;
 	/* background-color: radial-gradient(95.11% 98.54% at 5.76% 100%, #FE944D 0%, #FF7A30 100%); */
-	background: radial-gradient(95.11% 98.54% at 5.76% 100%, #FE944D 0%, #FF7A30 100%);
+	background: radial-gradient(95.11% 98.54% at 5.76% 100%, #fe944d 0%, #ff7a30 100%);
 }
 .month__table {
 	padding: 20px 0;
@@ -1089,20 +1125,20 @@ body {
 	padding: 0;
 	border-radius: 0;
 }
-.vanilla-calendar-wrapper{
+.vanilla-calendar-wrapper {
 	display: flex;
 	flex-direction: column;
 }
 
-button.vanilla-calendar-day__btn{
+button.vanilla-calendar-day__btn {
 	background: transparent;
 	color: #fff;
 	font-size: 20px;
 }
-button.vanilla-calendar-day__btn:hover{
+button.vanilla-calendar-day__btn:hover {
 	background: transparent;
 }
-.vanilla-calendar-event{
+.vanilla-calendar-event {
 	display: flex;
 	gap: 20px;
 }
